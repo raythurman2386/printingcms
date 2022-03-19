@@ -14,12 +14,9 @@ export default {
       type: "string",
     },
     {
-      name: "imgUrl",
-      title: "ImageUrl",
-      type: "image",
-      options: {
-        hotspot: true,
-      },
+      name: "reactIcon",
+      title: "React Icon",
+      type: "string",
     },
   ],
 };
