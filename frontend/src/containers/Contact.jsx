@@ -99,9 +99,11 @@ const Contact = () => {
         <div className="form-control py-4">
           <button
             type="submit"
-            className="btn btn-primary btn-block transition"
+            className={`btn btn-primary btn-block transition ${
+              isLoading && "loading"
+            }`}
           >
-            {!isLoading ? "Submit" : "Submitting..."}
+            {!isLoading ? "Submit" : "Loading"}
           </button>
           {isSubmitted && (
             <div>"Thank you! We will reach out as soon as possible!"</div>

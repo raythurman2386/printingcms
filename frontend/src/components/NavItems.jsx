@@ -8,6 +8,8 @@ const NavItems = () => {
           spy
           smooth="easeInOutQuart"
           to="services"
+          duration={800}
+          offset={25}
           className="hover:text-primary"
         >
           Services
@@ -18,6 +20,8 @@ const NavItems = () => {
           spy
           smooth="easeInOutQuart"
           to="materials"
+          duration={800}
+          offset={25}
           className="hover:text-primary"
         >
           Materials
@@ -28,6 +32,8 @@ const NavItems = () => {
           spy
           smooth="easeInOutQuart"
           to="about"
+          duration={800}
+          offset={25}
           className="hover:text-primary"
         >
           About
@@ -38,6 +44,8 @@ const NavItems = () => {
           spy
           smooth="easeInOutQuart"
           to="affiliates"
+          duration={800}
+          offset={25}
           className="hover:text-primary"
         >
           Affiliates
@@ -48,6 +56,8 @@ const NavItems = () => {
           spy
           smooth="easeInOutQuart"
           to="contact"
+          duration={800}
+          offset={25}
           className="hover:text-primary"
         >
           Contact

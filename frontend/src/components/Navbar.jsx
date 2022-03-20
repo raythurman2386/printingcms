@@ -1,9 +1,10 @@
-import { useCallback } from "react";
+import { useState, useCallback } from "react";
 import { NavItems } from ".";
 import { useSmoothScrollTo } from "../hooks";
 import "../styles/Navbar.css";
 const Navbar = () => {
   const handleScrollToTop = useSmoothScrollTo(0);
+  const [isVisible, setIsVisible] = useState(false);
 
   const handleBrandClick = useCallback(() => {
     handleScrollToTop();
@@ -24,7 +25,7 @@ const Navbar = () => {
           <NavItems />
         </ul>
       </div>
-      <div className="dropdown">
+      <div className="dropdown" onClick={() => setIsVisible(!isVisible)}>
         <label tabIndex="0" className="btn btn-ghost lg:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -41,8 +42,33 @@ const Navbar = () => {
             />
           </svg>
         </label>
-        <ul className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-40">
-          <NavItems />
+        <ul className="menu dropdown-content menu-compact lg:hidden mt-3 p-2 shadow bg-base-100 w-40 z-30">
+          {/* <NavItems /> */}
+          <li>
+            <a href="#services" className="hover:text-primary">
+              Services
+            </a>
+          </li>
+          <li>
+            <a href="#materials" className="hover:text-primary">
+              Materials
+            </a>
+          </li>
+          <li>
+            <a href="#about" className="hover:text-primary">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#affiliates" className="hover:text-primary transition">
+              Affiliates
+            </a>
+          </li>
+          <li>
+            <a href="#contact" className="hover:text-primary">
+              Contact
+            </a>
+          </li>
         </ul>
       </div>
     </div>
