@@ -1,20 +1,37 @@
+import { Link } from "react-scroll"
+
 const NavItems = () => {
   return (
     <>
         <li>
-            <a href="#services" className='hover:text-accent'>Services</a>
+            <Link
+            spy
+            smooth="easeInOutQuart"
+            to="services" className='hover:text-primary'>Services</Link>
         </li>
         <li>
-            <a href="#materials" className='hover:text-accent'>Materials</a>
+            <Link
+            spy
+            smooth="easeInOutQuart"
+            to="materials" className='hover:text-primary'>Materials</Link>
         </li>
         <li>
-            <a href="#about" className='hover:text-accent'>About</a>
+            <Link
+            spy
+            smooth="easeInOutQuart"
+            to="about" className='hover:text-primary'>About</Link>
         </li>
         <li>
-            <a href="#affiliates" className='hover:text-accent'>Affiliates</a>
+            <Link
+            spy
+            smooth="easeInOutQuart"
+            to="affiliates" className='hover:text-primary'>Affiliates</Link>
         </li>
         <li>
-            <a href="#contact" className='hover:text-accent'>Contact</a>
+            <Link
+            spy
+            smooth="easeInOutQuart"
+            to="contact" className='hover:text-primary'>Contact</Link>
         </li>
     </>
   )

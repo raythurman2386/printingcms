@@ -9,9 +9,9 @@ const Hero = () => {
                     Welcome to Saiyan Prints
                 </h1>
                 <p className="py-6">
-                    Send files to <span className="text-accent">print@saiyanprints.com</span> for a free quote!
+                    Send files to <span className="text-primary">print@saiyanprints.com</span> for a free quote!
                 </p>
-                <button className="btn btn-accent">Visit Shop</button>
+                <button className="btn btn-primary">Visit Shop</button>
             </div>
         </div>
     </div>
