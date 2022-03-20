@@ -11,10 +11,12 @@ const Card = ({ service }) => {
     if (title === "3D Printing Service") {
       return <FaPrint className="text-primary " size={70} />;
     }
+
+    return <FaPrint className="text-primary " size={70} />;
   };
   return (
     <div className="card w-96 bg-neutral-content text-slate-900 shadow-sm hover:shadow-xl transition-shadow">
-      <figure className="mt-8 p-8 bg-slate-600 w-40 m-auto rounded-full">
+      <figure className="mt-8 p-8 bg-slate-600 w-40 h-40 m-auto rounded-full">
         {getIcon(service.title)}
       </figure>
       <div className="card-body text-center">

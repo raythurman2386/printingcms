@@ -25,7 +25,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="dropdown">
-        <label tabindex="0" className="btn btn-ghost lg:hidden">
+        <label tabIndex="0" className="btn btn-ghost lg:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"
@@ -34,8 +34,8 @@ const Navbar = () => {
             stroke="currentColor"
           >
             <path
-              strokeLineCap="round"
-              strokeLineJoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               strokeWidth="2"
               d="M4 6h16M4 12h8m-8 6h16"
             />
