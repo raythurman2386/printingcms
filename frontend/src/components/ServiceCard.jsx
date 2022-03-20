@@ -15,7 +15,7 @@ const Card = ({ service }) => {
     return <FaPrint className="text-primary " size={70} />;
   };
   return (
-    <div className="card w-96 bg-neutral-content text-slate-900 shadow-sm hover:shadow-xl transition-shadow">
+    <div className="card xs:w-48 sm:w-72 md:w-84 lg:w-96 bg-neutral-content text-slate-900 shadow-sm hover:shadow-xl transition-shadow">
       <figure className="mt-8 p-8 bg-slate-600 w-40 h-40 m-auto rounded-full">
         {getIcon(service.title)}
       </figure>

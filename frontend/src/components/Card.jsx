@@ -1,7 +1,7 @@
 import { urlFor } from "../utils";
 const Card = ({ item }) => {
   return (
-    <div className="card w-96 bg-neutral-content text-slate-900 shadow-sm hover:shadow-xl transition-shadow">
+    <div className="card xs:w-48 sm:w-72 md:w-84 lg:w-96 bg-neutral-content text-slate-900 shadow-sm hover:shadow-xl transition-shadow">
       <figure className="">
         <img
           src={urlFor(item.imgUrl)}
