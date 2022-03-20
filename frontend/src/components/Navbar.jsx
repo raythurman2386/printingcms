@@ -1,6 +1,7 @@
 import { useCallback } from "react";
 import { NavItems } from ".";
 import { useSmoothScrollTo } from "../hooks";
+import "../styles/Navbar.css";
 const Navbar = () => {
   const handleScrollToTop = useSmoothScrollTo(0);
 

@@ -1,5 +1,12 @@
-import { About, Affiliates, Hero, Materials, Services, Contact } from "./containers";
-import {Layout} from "./wrapper";
+import {
+  About,
+  Affiliates,
+  Hero,
+  Materials,
+  Services,
+  Contact,
+} from "./containers";
+import { Layout } from "./wrapper";
 
 const App = () => {
   return (
