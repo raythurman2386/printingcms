@@ -1,8 +1,11 @@
+import { Hero } from "./containers";
+import {Layout} from "./wrapper";
+
 const App = () => {
   return (
-    <div>
-      <h1>App</h1>
-    </div>
+    <>
+      <Hero />
+    </>
   );
 };
-export default App;
+export default Layout(App);
