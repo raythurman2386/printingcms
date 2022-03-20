@@ -1,4 +1,4 @@
-
+import {MotionWrapper} from '../wrapper'
 
 const Services = () => {
   return (
@@ -6,4 +6,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default MotionWrapper(Services)

@@ -1,3 +1,5 @@
+import { MotionWrapper } from "../wrapper"
+
 const Hero = () => {
   return (
     <div id="home" className="hero min-h-screen bg-base-200">
@@ -16,4 +18,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default MotionWrapper(Hero)
