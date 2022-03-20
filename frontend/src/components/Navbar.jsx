@@ -13,7 +13,7 @@ const Navbar = () => {
     <div className="navbar fixed bg-base-100 flex-row-reverse lg:flex-row backdrop-blur-xl">
       <div className="flex-1 justify-end lg:justify-start">
         <h1
-          className="btn btn-ghost disabled normal-case text-xl text-secondary"
+          className="btn btn-ghost disabled normal-case text-xl text-secondary logo"
           onClick={handleBrandClick}
         >
           Saiyan Prints

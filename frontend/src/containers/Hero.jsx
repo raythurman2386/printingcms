@@ -11,12 +11,15 @@ const Hero = () => {
           className="max-w-md content"
         >
           <h1 className="text-5xl font-bold">Welcome to Saiyan Prints</h1>
-          <p className="py-6 text-xl">
-            Send files to{" "}
-            <span className="text-primary">quotes@saiyanprints.com</span> for a
-            free quote!
-          </p>
-          <button className="btn btn-primary">Visit Shop</button>
+          <p className="py-6 text-xl">What can we print for you?</p>
+          <a
+            href="https://www.etsy.com/shop/SaiyanPrints"
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-primary"
+          >
+            Visit Shop
+          </a>
         </motion.div>
       </div>
     </div>
