@@ -15,7 +15,7 @@ const Footer = () => {
           <FaInstagram size={24} />
         </a>
         <a
-          href="https://facebook.com/groups/saiyanprints"
+          href="https://www.facebook.com/Saiyanprints"
           target="_blank"
           rel="noreferrer"
           className="hover:text-primary"
