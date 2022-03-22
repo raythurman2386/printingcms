@@ -1,6 +1,6 @@
 import { Link } from "react-scroll";
 
-const NavItems = () => {
+const NavItems = ({ setIsVisible }) => {
   return (
     <>
       <li>
@@ -9,7 +9,7 @@ const NavItems = () => {
           smooth="easeInOutQuart"
           to="services"
           duration={800}
-          offset={25}
+          onClick={() => setIsVisible(false)}
           className="hover:text-primary"
         >
           Services
@@ -21,7 +21,7 @@ const NavItems = () => {
           smooth="easeInOutQuart"
           to="materials"
           duration={800}
-          offset={25}
+          onClick={() => setIsVisible(false)}
           className="hover:text-primary"
         >
           Materials
@@ -33,7 +33,7 @@ const NavItems = () => {
           smooth="easeInOutQuart"
           to="about"
           duration={800}
-          offset={25}
+          onClick={() => setIsVisible(false)}
           className="hover:text-primary"
         >
           About
@@ -45,7 +45,7 @@ const NavItems = () => {
           smooth="easeInOutQuart"
           to="affiliates"
           duration={800}
-          offset={25}
+          onClick={() => setIsVisible(false)}
           className="hover:text-primary"
         >
           Affiliates
@@ -57,7 +57,7 @@ const NavItems = () => {
           smooth="easeInOutQuart"
           to="contact"
           duration={800}
-          offset={25}
+          onClick={() => setIsVisible(false)}
           className="hover:text-primary"
         >
           Contact

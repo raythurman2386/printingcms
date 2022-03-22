@@ -35,8 +35,9 @@ const About = () => {
             whileInView={{ opacity: [0, 1] }}
             transition={{ duration: 0.5, delayChildren: 0.5 }}
             className="flex flex-col justify-center align-center my-10"
+            key={about + i}
           >
-            <p className="p-2 text-lg">{about.date}</p>
+            <p className="p-2 text-lg font-semibold">{about.date}</p>
             <img
               height={150}
               width={150}

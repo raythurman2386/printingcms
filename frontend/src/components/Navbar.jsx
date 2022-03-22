@@ -42,34 +42,11 @@ const Navbar = () => {
             />
           </svg>
         </label>
-        <ul className="menu dropdown-content menu-compact lg:hidden mt-3 p-2 shadow bg-base-100 w-40 z-30">
-          {/* <NavItems /> */}
-          <li>
-            <a href="#services" className="hover:text-primary">
-              Services
-            </a>
-          </li>
-          <li>
-            <a href="#materials" className="hover:text-primary">
-              Materials
-            </a>
-          </li>
-          <li>
-            <a href="#about" className="hover:text-primary">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#affiliates" className="hover:text-primary transition">
-              Affiliates
-            </a>
-          </li>
-          <li>
-            <a href="#contact" className="hover:text-primary">
-              Contact
-            </a>
-          </li>
-        </ul>
+        {isVisible && (
+          <ul className="menu menu-compact lg:hidden mt-3 p-2 shadow bg-base-100 w-40 z-30">
+            <NavItems setIsVisible={setIsVisible} />
+          </ul>
+        )}
       </div>
     </div>
   );
