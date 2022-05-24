@@ -12,7 +12,7 @@ const Footer = () => {
           rel="noreferrer"
           className="hover:text-primary"
         >
-          <FaInstagram size={24} />
+          <FaInstagram size={26} />
         </a>
         <a
           href="https://www.facebook.com/Saiyanprints"
@@ -20,7 +20,7 @@ const Footer = () => {
           rel="noreferrer"
           className="hover:text-primary"
         >
-          <FaFacebook size={24} />
+          <FaFacebook size={26} />
         </a>
       </div>
     </footer>
