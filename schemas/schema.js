@@ -5,6 +5,7 @@ import createSchema from "part:@sanity/base/schema-creator";
 import schemaTypes from "all:part:@sanity/base/schema-type";
 import about from "./about";
 import affiliates from "./affiliates";
+import alert from "./alert";
 import contact from "./contact";
 import materials from "./materials";
 import services from "./services";
@@ -19,6 +20,7 @@ export default createSchema({
     /* Your types here! */
     about,
     affiliates,
+    alert,
     contact,
     materials,
     services,
