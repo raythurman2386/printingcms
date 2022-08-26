@@ -1,4 +1,19 @@
+import { useState, useEffect } from "react";
+import { client } from "../utils";
+
 const Alert = () => {
+  const [alert, setAlert] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type == "alert"] {description, active}';
+
+    client.fetch(query).then((data) => {
+      setAlert(data[0]);
+    });
+  }, []);
+
+  if (!alert.active) return null;
+
   return (
     <div className="alert alert-info shadow-lg z-10 rounded-none pt-20">
       <div>
@@ -9,16 +24,13 @@ const Alert = () => {
           className="stroke-current flex-shrink-0 w-6 h-6"
         >
           <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
           ></path>
         </svg>
-        <span>
-          Help support Ukraine! 10% of every online order will be donated in
-          support of Ukraine and the Ukrainian people.
-        </span>
+        <span>{alert.description}</span>
       </div>
     </div>
   );
