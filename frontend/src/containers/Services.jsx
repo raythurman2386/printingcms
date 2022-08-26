@@ -18,6 +18,7 @@ const Services = () => {
   return (
     <div
       id="services"
+      name="services"
       className="hero min-h-screen bg-neutral-content text-base-200 flex flex-col justify-evenly text-center py-10"
     >
       <div className="flex flex-col px-4 w-8/12">

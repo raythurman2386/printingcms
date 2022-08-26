@@ -22,7 +22,7 @@ const Navbar = () => {
       </div>
       <div className="hidden lg:flex flex-none">
         <ul className="menu menu-horizontal p-0">
-          <NavItems />
+          <NavItems setIsVisible={setIsVisible} />
         </ul>
       </div>
       <div className="dropdown" onClick={() => setIsVisible(!isVisible)}>
