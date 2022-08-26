@@ -1,11 +1,10 @@
-import { Footer, Navbar, Alert } from "../components";
+import { Footer, Navbar } from "../components";
 
 const Layout = (Component) =>
   function HOC() {
     return (
       <>
         <Navbar />
-        <Alert />
         <Component />
         <Footer />
       </>
