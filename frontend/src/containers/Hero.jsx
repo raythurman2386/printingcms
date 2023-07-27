@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import "../styles/Hero.css";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -12,14 +13,15 @@ const Hero = () => {
         >
           <h1 className="text-5xl font-bold">Welcome to Saiyan Prints</h1>
           <p className="py-6 text-xl">What can we print for you?</p>
-          {/* <a
-            href="https://www.saiyanprints.store/"
-            target="_blank"
-            rel="noreferrer"
+          <Link
+            spy
+            to="contact"
+            duration={800}
+            smooth="easeInOutQuart"
             className="btn btn-primary"
           >
-            Visit Shop
-          </a> */}
+            Contact Us!
+          </Link>
         </motion.div>
       </div>
     </div>
