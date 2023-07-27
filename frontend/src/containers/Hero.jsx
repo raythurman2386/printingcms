@@ -12,14 +12,14 @@ const Hero = () => {
         >
           <h1 className="text-5xl font-bold">Welcome to Saiyan Prints</h1>
           <p className="py-6 text-xl">What can we print for you?</p>
-          <a
+          {/* <a
             href="https://www.saiyanprints.store/"
             target="_blank"
             rel="noreferrer"
             className="btn btn-primary"
           >
             Visit Shop
-          </a>
+          </a> */}
         </motion.div>
       </div>
     </div>
