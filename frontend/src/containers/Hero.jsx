@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import "../styles/Hero.css";
 import { Link } from "react-scroll";
+import "../styles/Hero.css";
 
 const Hero = () => {
   return (

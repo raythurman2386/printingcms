@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="footer flex flex-col-reverse lg:flex-row items-center p-4 bg-neutral text-neutral-content justify-center lg:justify-evenly">
       <div className="items-center grid-flow-col">
-        <p>Copyright © {date} - All right reserved</p>
+        <p>Copyright © {date} - Saiyan Prints All right reserved</p>
       </div>
       <div className="grid-flow-col gap-4 justify-center md:place-self-center md:justify-self-end">
         <a
