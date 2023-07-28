@@ -1,4 +1,4 @@
-import {useMemo, useCallback} from "react";
+import { useMemo, useCallback } from "react";
 
 import { scroller, animateScroll } from "react-scroll";
 
@@ -29,7 +29,7 @@ const useSmoothScrollTo = (anchorOrPosition, options = {}) => {
     }
   }, [anchorOrPosition, opts]);
 
-  return handleScrollTo
-}
+  return handleScrollTo;
+};
 
-export default useSmoothScrollTo
+export default useSmoothScrollTo;

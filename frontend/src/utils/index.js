@@ -1,1 +1,1 @@
-export {client, urlFor} from './client'
+export { client, urlFor } from "./client";
