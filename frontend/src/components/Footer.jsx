@@ -1,6 +1,6 @@
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 const Footer = () => {
-  const date = new Date().getFullYear()
+  const date = new Date().getFullYear();
   return (
     <footer className="footer flex flex-col-reverse lg:flex-row items-center p-4 bg-neutral text-neutral-content justify-center lg:justify-evenly">
       <div className="items-center grid-flow-col">

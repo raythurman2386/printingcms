@@ -1,0 +1,34 @@
+name: Sanity Deployment
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Node.js and npm
+        uses: actions/setup-node@v2
+        with:
+          node-version: "18.16.1"
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Install Sanity CLI
+        run: npm install -g @sanity/cli
+
+      - name: Sanity Deploy
+        env:
+          SANITY_AUTH_TOKEN: ${{ secrets.SANITY_DEPLOYMENT_TOKEN }}
+        run: |
+          npm run deploy

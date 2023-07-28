@@ -6,11 +6,11 @@ import materials from "./materials";
 import services from "./services";
 
 export default [
-    /* Your types here! */
-    about,
-    affiliates,
-    alert,
-    contact,
-    materials,
-    services,
-  ]
+  /* Your types here! */
+  about,
+  affiliates,
+  alert,
+  contact,
+  materials,
+  services,
+];

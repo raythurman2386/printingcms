@@ -1,1 +1,1 @@
-export {default as useSmoothScrollTo} from './useSmoothScrollTo'
+export { default as useSmoothScrollTo } from "./useSmoothScrollTo";

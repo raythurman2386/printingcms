@@ -9,6 +9,7 @@
   "scripts": {
     "start": "sanity start",
     "build": "sanity build",
+    "deploy": "sanity deploy",
     "dev": "sanity dev"
   },
   "keywords": [
@@ -23,5 +24,8 @@
     "react-dom": "^18.2.0",
     "sanity": "^3.14.4",
     "styled-components": "^5.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0"
   }
 }
