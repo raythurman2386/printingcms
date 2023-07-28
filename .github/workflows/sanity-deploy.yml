@@ -29,6 +29,6 @@ jobs:
 
       - name: Sanity Deploy
         env:
-          SANITY_TOKEN: ${{ secrets.SANITY_DEPLOYMENT_TOKEN }}
+          SANITY_AUTH_TOKEN: ${{ secrets.SANITY_DEPLOYMENT_TOKEN }}
         run: |
-          sanity deploy --token $SANITY_TOKEN
+          npm run deploy
