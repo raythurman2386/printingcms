@@ -1,3 +1,4 @@
+import { FacebookChat } from "./components";
 import {
   About,
   Affiliates,
@@ -17,6 +18,7 @@ const App = () => {
       <About />
       <Affiliates />
       <Contact />
+      <FacebookChat />
     </>
   );
 };
