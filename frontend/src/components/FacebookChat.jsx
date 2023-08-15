@@ -1,9 +1,13 @@
+import ChatLogo from "./ChatLogo";
+
 const FacebookChat = () => {
   return (
     <>
       <div id="fb-root"></div>
 
-      <div id="fb-customer-chat" class="fb-customerchat"></div>
+      <div id="fb-customer-chat" className="fb-customerchat">
+        <ChatLogo height={15} width={15} fill="#FFF" />
+      </div>
 
       <script>
         {`var chatbox = document.getElementById('fb-customer-chat');

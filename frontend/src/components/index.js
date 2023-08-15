@@ -5,3 +5,4 @@ export { default as NavItems } from "./NavItems";
 export { default as Card } from "./Card";
 export { default as Alert } from "./Alert";
 export { default as FacebookChat } from "./FacebookChat";
+export { default as ChatLogo } from "./ChatLogo";
